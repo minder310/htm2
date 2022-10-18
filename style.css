@@ -1,0 +1,55 @@
+*{
+    font-family: '標楷體';
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+.body,.top,.footer,.menu,.update,.content,.marquee{
+    border: 1px solid lightslategray;
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+}
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+}
+.left{
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.update{
+    flex-basis: 215px;
+    height: 25px;
+}
+.menu{
+    height: calc(100% - 25px);
+    flex-basis: 215px;
+}
+
+.right{
+    flex-basis:  calc(1000px - 215px);
+    height: calc(768px - 65px - 20px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.marquee{
+    flex-basis: calc(1000px - 215px);
+    height: 29px;
+}
+.content{
+    flex-basis: calc(1000px - 215px);
+    height: calc(100% - 29px);
+}
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+}
