@@ -1,20 +1,17 @@
 *{
     font-family: '標楷體';
-    overflow: hidden;
-    box-sizing: border-box;
-    text-align: center;
     justify-content: center;
-}
-.body,.top,.footer,.menu,.update,.content,.marquee{
-    border: 1px solid lightslategray;
+    text-align: center;
+    box-sizing: border-box;
 }
 .body{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 0 auto;
     width: 1024px;
     height: 768px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .top{
     flex-basis: 1000px;
@@ -23,33 +20,67 @@
 .left{
     flex-basis: 215px;
     height: calc(768px - 65px - 20px);
-    display: flex;
-    flex-wrap: wrap;
+}
+.menu{
+    flex-basis: 215px;
+    height: calc(100% - 25px);
+    
 }
 .update{
     flex-basis: 215px;
     height: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
 }
-.menu{
-    height: calc(100% - 25px);
-    flex-basis: 215px;
-}
-
 .right{
-    flex-basis:  calc(1000px - 215px);
+    flex-basis: calc(1000px - 215px);
     height: calc(768px - 65px - 20px);
-    display: flex;
-    flex-wrap: wrap;
 }
 .marquee{
-    flex-basis: calc(1000px - 215px);
+    flex-basis: 770px;
     height: 29px;
+    font-size: 24px;
+    color: #0000ff;
 }
 .content{
-    flex-basis: calc(1000px - 215px);
+    flex-basis: calc(100% - 215px);
+    height: calc(99% - 29px);
+}
+.iframe{
+    width: 100%;
     height: calc(100% - 29px);
 }
 .footer{
     flex-basis: 1000px;
     height: 20px;
+}
+.body,.top,.footer,.menu,.marquee,.content,.update{
+    border: 1px solid lightslategray;
+}
+
+h1{
+    font-size: 24px;
+    text-align: center;
+    /* 底線指令忘了 */
+    color: #ff00ff;
+    font-weight: 500;
+    
+}
+nav>a{
+    background-image: url(./images/menu1.png);
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    width: 200px;
+    height: 35px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+nav>a:hover{
+    background-image: url(./images/menu2.png);
+}
+.abody{
+    background-image: url(./images/0101.jpg);
 }
