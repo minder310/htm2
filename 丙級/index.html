@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立科技高中-校園社團介紹網</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .body,.footer,.main,.marquee,.menu,.update,.header{
+         border: 1px solid lightgrey;   
+        }
+        .body{
+            width: 1024px;
+            height: 768px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        .header{
+            flex-basis: 1000px;
+            height: 65px;
+        }
+        .left{
+            flex-basis: 215px;
+            height: calc( 768px - 65px - 20px);
+        }
+        .menu{
+            flex-basis: 215px;
+            height:calc( 100% - 25px);
+        }
+        .update{
+            flex-basis: 215px;
+            height: 25px;
+            font: 16px;
+            color: #000000;
+        }
+        .right{
+            flex-basis:calc( 1000px - 215px);
+            height:calc( 768px - 65px - 20px);
+        }
+        .marquee{
+            flex-basis: calc(1000px - 215px);
+            height: 29px;
+            display: block;
+            font-style: 24px;
+            color: #0000ff;
+        }
+        .main{
+            flex-basis:calc( 1000px - 215px);
+            height:calc( 100% - 29px);
+        }
+        .footer{
+            flex-basis: 1000px;
+            height: 20px;
+            font-size: 16;
+            color: #000;
+        }
+        /*  */
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            font-weight: 500;
+            color: #ff00ff;
+            font: 24px;
+        }
+        a{
+            font: 16px;
+            color: #000000;
+            height: 35px;
+            width: 200px;
+            display: block;
+            background-image: url(./images/menu1.png);
+            margin: 5px auto;
+            padding: 8px;
+        }
+        a:hover{
+            background-image: url(./images/menu2.png);
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="body">
+    <header class="header">
+        <img  src="./images/logo.png" alt="">
+    </header>
+    <address class="left">
+        <nav class="menu">
+            <u>
+                <h1>社團介紹</h1>
+            </u>
+            <a href="./guitar_history.html" target="myMain">吉他社</a>
+            <a href="">熱舞社</a>
+            <a href="">棒球社</a>
+            <a href="">羽球社</a>
+            <a href="">足球社</a>
+            <a href="">童軍社</a>
+        </nav>
+        <footer class="update">
+            最近更新日期:2022/10/20
+        </footer>
+    </address>
+    <main class="right">
+        <marquee behavior="" direction="" class="marquee">
+            歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參與
+        </marquee>
+        <main class="main">
+            <iframe src="./main.html" frameborder="0" name="myMain"></iframe>
+        </main>
+    </main>
+    <footer class="footer">
+        網頁設計及維護:XXOOO
+    </footer>
+</body>
+</html>

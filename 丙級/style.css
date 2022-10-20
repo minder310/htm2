@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+    text-align: center;
+    justify-content: center;
+}
+.bodybox{
+    background-image: url(./images/0101.jpg);
+}
+.toph{
+    font-size: 18px;
+    color: #ff0000;
+}
+.tb{
+    width: 100%;
+}
+.tr{
+    width: 33%;
+}
